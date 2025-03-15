@@ -1,0 +1,87 @@
+body {
+    font-family: 'Franklin Gothic Medium', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, rgba(0, 0, 139, 0.808), rgba(255, 239, 213, 0.459));
+}
+
+.container {
+    width: 350px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 50px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.521);
+    text-align: center;
+    color: white;
+    border: #000000 solid 30px;
+}
+
+.container .icon {
+    font-size: 60px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 15px;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 12px;
+    padding-left: 40px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* .input-container input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+} */
+
+/* .input-container i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.7);
+} */
+
+.small {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 10px 0;
+}
+
+.small a {
+    color: #392bff;
+    text-decoration: none;
+}
+
+.small a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(to right, rgba(0, 0, 139, 0.808), rgba(255, 239, 213, 0.459));
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: linear-gradient(to right, rgba(0, 0, 139, 0.808), rgba(255, 239, 213, 0.459));
+}
