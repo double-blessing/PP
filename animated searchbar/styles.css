@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(248, 245, 240);
+    align-items: center;
+}
+
+.search-Bar-container {
+    display: flex;
+    align-items: center;
+    background-color: antiquewhite;
+    padding: 5px;
+    width: 300px; /* Initial width */
+    height: 50px;
+    border-radius: 50px;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2),
+        -6px -6px 10px rgba(255, 255, 255, 0.7);
+    margin: 10px;
+    position: relative;
+    transition: width 0.3s ease; /* Smooth width transition */
+    overflow: hidden; /* Hide content when compressed */
+}
+
+.magnifier {
+    width: 25px;
+    cursor: pointer;
+    position: absolute;
+    left: 20px;
+}
+
+.mic-icon {
+    width: 30px;
+    position: absolute;
+    right: 10px;
+    transition: width 0.3s ease; /* Smooth width transition */
+}
+
+.input {
+    background-color: transparent;
+    border: none;
+    margin: 10px 50px;
+    outline: none;
+    color: rgb(100, 100, 100);
+    transition: width 0.3s ease; /* Smooth width transition */
+}
+
+/* Styles for the "active" state */
+.search-Bar-container.active {
+    width: 50px; /* Compressed width */
+}
+
+.search-Bar-container.active .input {
+    width: 0; /* Hide input field */
+}
+
+.search-Bar-container.active .mic-icon {
+    width: 0; /* Hide microphone icon */
+}
